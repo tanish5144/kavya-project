@@ -1,0 +1,28 @@
+.super-admin-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.super-admin-main {
+  flex: 1;
+  margin-left: 250px;
+  margin-top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  transition: margin-left 0.25s ease;
+}
+
+.super-admin-main.sidebar-collapsed {
+  margin-left: 80px;
+}
+
+@media (max-width: 768px) {
+  .super-admin-main {
+    margin-left: 0;
+    margin-top: 56px;
+  }
+}
+
+
